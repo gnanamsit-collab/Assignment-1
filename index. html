@@ -1,1 +1,52 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Are Hacked</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #000;
+      color: #00ff00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: monospace;
+      overflow: hidden;
+    }
+
+    .message {
+      text-align: center;
+      animation: glitch 0.8s infinite;
+    }
+
+    h1 {
+      font-size: 70px;
+      color: #ff0000;
+      text-shadow: 3px 3px #00ff00;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
+    @keyframes glitch {
+      0%, 100% { transform: translate(0); }
+      25% { transform: translate(5px, -3px); }
+      50% { transform: translate(-5px, 3px); }
+      75% { transform: translate(3px, 2px); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="message">
+    <h1>⚠ YOU ARE HACKED ⚠</h1>
+    <p>Just kidding 😈</p>
+  </div>
+</body>
+</html>
